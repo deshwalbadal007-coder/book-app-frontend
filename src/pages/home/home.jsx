@@ -1,16 +1,16 @@
  import React from 'react'
-import Banner from './Banner'
+import Banner from './banner'
 import TopSellers from './TopSellers'
-import Recommended from './Recommended';
+import Recommended from './Recommended'
 import News from './News'
 
 const Home = () => {
   return (
     <>
-        <Banner/>
-        <TopSellers/>
-        <Recommended/>
-        <News/>
+      <Banner />
+      <TopSellers />
+      <Recommended />
+      <News />
     </>
   )
 }

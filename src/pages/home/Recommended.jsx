@@ -13,7 +13,7 @@ import BookCard from '../books/BookCard';
 import { useFetchAllBooksQuery } from '../../redux/features/books/booksApi';
 
 
-const Recommened = () => {
+const Recommended = () => {
    
 
     const {data: books = []} = useFetchAllBooksQuery();
@@ -25,7 +25,7 @@ const Recommened = () => {
          <Swiper
                 slidesPerView={1}
                 spaceBetween={30}
-                navigation={true}
+                    navigation={true}
                 breakpoints={{
                     640: {
                         slidesPerView: 1,
@@ -63,4 +63,4 @@ const Recommened = () => {
   )
 }
 
-export default Recommened
+export default Recommended

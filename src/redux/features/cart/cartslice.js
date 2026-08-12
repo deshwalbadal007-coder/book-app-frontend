@@ -10,7 +10,7 @@ const cartSlice = createSlice({
     initialState: initialState,
     reducers:{
         addToCart: (state, action) => {
-            const existingItem = state.cartItems.find(item => item._id === action.payload._id);
+            const existingItem = state.cartItems.find(item => item._id === action.payload.id);
             if(!existingItem) {
                 state.cartItems.push(action.payload)
                 Swal.fire({

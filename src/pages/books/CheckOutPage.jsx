@@ -22,8 +22,13 @@ const CheckoutPage = () => {
     const navigate =  useNavigate()
 
     const [isChecked, setIsChecked] = useState(false)
-    const onSubmit = async (data) => {
-     
+    const onSubmit = async (data) => { 
+        console.log("CART ITEMS:", cartItems);
+        console.log(
+            "PRODUCT IDS:", 
+            cartItems.map((item) => item._id)
+        );
+
         const newOrder = {
             name: data.name,
             email: currentUser?.email,

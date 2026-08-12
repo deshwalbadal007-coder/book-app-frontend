@@ -5,7 +5,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import { AuthProvide } from './context/AuthContext'
 import { useEffect, useState } from 'react'
-import Loading from './components/Loading'
+import Loading from "./components/Loading";
 
 function App() {
 
